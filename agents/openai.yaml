@@ -1,0 +1,7 @@
+# Features: UI metadata for skill lists and chips.
+# Implementation notes: Keep display metadata aligned with SKILL.md.
+# Recent changes: Added initial interface metadata.
+interface:
+  display_name: "AppRun Skills"
+  short_description: "AppRun MVU, routing, state, and testing"
+  default_prompt: "Use $apprun-skills build AppRun applications efficiently."
