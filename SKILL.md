@@ -1,6 +1,6 @@
 ---
 name: apprun-skills
-description: "End-to-end guidance for AppRun apps in TypeScript using MVU: component patterns, event handling, state management (including async generators), routing/navigation with params and guards, and testing with vitest. Use when designing or reviewing AppRun components, wiring routes, managing state flows, or writing AppRun tests."
+description: End-to-end guidance for AppRun apps in TypeScript using MVU including component patterns, event handling, state management (including async generators), routing/navigation with params and guards, and testing with vitest. Use when designing or reviewing AppRun components, wiring routes, managing state flows, or writing AppRun tests.
 ---
 
 # AppRun Skills

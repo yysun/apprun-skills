@@ -1,6 +1,6 @@
-# AppRun Skills
+# AppRun Agent Skill
 
-End-to-end guidance for building AppRun applications in TypeScript using the MVU (Model-View-Update) pattern. This skill covers component patterns, event handling, state management (including async generators), routing/navigation with parameters and guards, and testing with Vitest.
+This repository contains an agent skill for AI coding assistants focused on developing AppRun applications in TypeScript with the MVU (Model-View-Update) pattern. The skill covers component patterns, event handling, state management (including async generators), routing and navigation with parameters and guards, and testing with Vitest.
 
 ## What's Included
 
@@ -12,18 +12,51 @@ End-to-end guidance for building AppRun applications in TypeScript using the MVU
 - **Testing**: Unit testing patterns with Vitest
 - **Development Checklist**: Complete checklist for building AppRun components
 
-## Setup by Platform
+## Install the Skill
 
-Copy the contents of `SKILL.md` into the appropriate location for your AI coding assistant:
+### Recommended: install with `npx skills`
 
-| Platform | File to create / edit |
-|---|---|
-| Claude Code | `CLAUDE.md` in project root |
-| Cursor | `.cursor/rules/apprun.mdc` |
-| GitHub Copilot | `.github/copilot-instructions.md` |
-| Windsurf | `.windsurf/rules/apprun.md` |
-| Cline | `.cline/rules/apprun.md` |
-| OpenAI Codex | `AGENTS.md` in project root |
+Use the `skills` CLI to install this repository as an agent skill:
+
+```bash
+npx skills add yysun/apprun-skills
+```
+
+Useful variations:
+
+```bash
+# Install globally instead of in the current project
+npx skills add yysun/apprun-skills --global
+
+# Install to a specific agent only
+npx skills add yysun/apprun-skills --agent github-copilot
+
+# Preview what the repository exposes
+npx skills add yysun/apprun-skills --list
+```
+
+### Manual installation
+
+If you do not want to use `npx skills`, create an `apprun-skills` folder in your agent's skills directory and place this repository's `SKILL.md` inside it.
+
+Example:
+
+```text
+.agents/skills/apprun-skills/SKILL.md
+```
+
+Current skill directories for common coding agents:
+
+| Agent | Project install folder | Global install folder |
+|---|---|---|
+| Claude Code | `.claude/skills/apprun-skills/` | `~/.claude/skills/apprun-skills/` |
+| Cursor | `.agents/skills/apprun-skills/` | `~/.cursor/skills/apprun-skills/` |
+| GitHub Copilot | `.agents/skills/apprun-skills/` | `~/.copilot/skills/apprun-skills/` |
+| Cline | `.agents/skills/apprun-skills/` | `~/.agents/skills/apprun-skills/` |
+| OpenAI Codex | `.agents/skills/apprun-skills/` | `~/.codex/skills/apprun-skills/` |
+| Windsurf | `.windsurf/skills/apprun-skills/` | `~/.codeium/windsurf/skills/apprun-skills/` |
+
+Project installs keep the skill in the repository. Global installs make it available across all projects for that agent.
 
 ## License
 
